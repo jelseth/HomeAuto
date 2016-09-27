@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         {
             self.CurrentState.text = "On";
             State = false;
-            self.CurrentState.text = "gitTest";
+            self.CurrentState.text = "Jake Rules";
         }
         else
         {
