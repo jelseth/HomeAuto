@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					23B2A7451D9ABF0600FD9BC6 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 35P4C54WUR;
 						ProvisioningStyle = Automatic;
 					};
 					23B2A7591D9ABF0600FD9BC6 = {
@@ -412,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35P4C54WUR;
 				INFOPLIST_FILE = HomeAuto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jake.HomeAuto;
@@ -424,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35P4C54WUR;
 				INFOPLIST_FILE = HomeAuto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jake.HomeAuto;

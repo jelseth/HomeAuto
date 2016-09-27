@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var CurrentState: UILabel!
+    var State = false;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +24,19 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func CheckGarageState(_ sender: AnyObject) {
+        
+        if(State == true)
+        {
+            self.CurrentState.text = "On";
+            State = false;
+        }
+        else
+        {
+            self.CurrentState.text = "Off";
+            State = true;
+        }
+        
+    }
 }
 
