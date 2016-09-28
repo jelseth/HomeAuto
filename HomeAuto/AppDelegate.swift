@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  HomeAuto
 //
-//  Created by Jake on 9/27/16.
-//  Copyright © 2016 Jake. All rights reserved.
+//  Created by Jake and the TROY on 9/27/16.
+//  Copyright © 2016 Jake and the TROY. All rights reserved.
 //
 
 import UIKit
