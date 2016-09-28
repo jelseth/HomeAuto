@@ -28,13 +28,13 @@ class ViewController: UIViewController {
         
         if(State == true)
         {
-            self.CurrentState.text = "On";
+            self.CurrentState.text = "Current State";
             State = false;
-            self.CurrentState.text = "Jake Rules";
+            self.CurrentState.text = "Closed";
         }
         else
         {
-            self.CurrentState.text = "Off";
+            self.CurrentState.text = "Open";
             State = true;
         }
         
