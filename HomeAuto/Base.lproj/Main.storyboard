@@ -50,12 +50,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.0.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2T-4I-eXC">
+                                <frame key="frameInset" minX="16" minY="562" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5064948087283504" green="0.72336632013320923" blue="0.0" alpha="0.35186509683098594" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.19977678571428573" alpha="0.90988668753239432" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="CurrentState" destination="Uzi-KO-YW4" id="eMk-3i-tQP"/>
+                        <outlet property="JSONOutput" destination="t2T-4I-eXC" id="dxa-9l-Obw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

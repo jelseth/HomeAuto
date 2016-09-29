@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var CurrentState: UILabel!
     var State = false;
     
+    @IBOutlet weak var JSONOutput: UILabel!
+    
+    var apiClass = API()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,13 +27,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
     @IBAction func CheckGarageState(_ sender: AnyObject) {
-        State = API().GetCurrentDoorState();
+        State = apiClass.GetCurrentDoorState();
         if(State)
         {
             self.CurrentState.text = "Current State";
-            State = false;
+            //State = false;
             self.CurrentState.text = "Closed";
         }
         else
@@ -37,7 +40,7 @@ class ViewController: UIViewController {
             self.CurrentState.text = "Open";
             State = true;
         }
-        
+        self.JSONOutput.text = apiClass.GetIPAddress();
     }
 }
 

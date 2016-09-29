@@ -9,6 +9,8 @@ import Foundation
 
 class API: NSObject, NSURLConnectionDataDelegate {
     
+    private var ReturnedIPAddress = "0.0.0.0"
+    
     func GetCurrentDoorState() -> Bool
     {
         SendRestRequest();
@@ -42,6 +44,7 @@ class API: NSObject, NSURLConnectionDataDelegate {
                             {
                                 print("Jake is the bomb yo")
                             }
+                            self.UpdateIPAddress(theIpAddress: ip)
                             
                         };
                         print(json)
@@ -58,7 +61,19 @@ class API: NSObject, NSURLConnectionDataDelegate {
             }
             
         })
-        task.resume()    }
+        task.resume()
+    }
+    
+    private func UpdateIPAddress(theIpAddress: String) -> Void
+    {
+        ReturnedIPAddress = theIpAddress
+    }
+    
+    public func GetIPAddress() -> String
+    {
+            return ReturnedIPAddress
+    }
+    
    /* public func dataTaskWithRequest(request: URLRequest, completionHandler: (Data?, URLResponse?, NSError?) -> Void) -> URLSessionDataTask
     {
         let todoEndpoint: String = "http://jsonplaceholder.typicode.com/todos/1"
