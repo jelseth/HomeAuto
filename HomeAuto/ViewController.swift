@@ -25,8 +25,8 @@ class ViewController: UIViewController {
 
 
     @IBAction func CheckGarageState(_ sender: AnyObject) {
-        
-        if(State == true)
+        State = API().GetCurrentDoorState();
+        if(State)
         {
             self.CurrentState.text = "Current State";
             State = false;
